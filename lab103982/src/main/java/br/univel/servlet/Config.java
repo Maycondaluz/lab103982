@@ -38,7 +38,7 @@ import br.univel.classes.Venda;
 		})
 
 @WebServlet("/Config")
-public class ConfiguracaoServlet extends HttpServlet implements Serializable {
+public class Config extends HttpServlet implements Serializable {
 
 
 
@@ -57,7 +57,7 @@ public class ConfiguracaoServlet extends HttpServlet implements Serializable {
 	@Resource(lookup = "java:/topic/TOPICVenda")
 	private Topic topic;
 
-	public ConfiguracaoServlet() {
+	public Config() {
 
 	}
 
