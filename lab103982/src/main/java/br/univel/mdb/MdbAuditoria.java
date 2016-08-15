@@ -20,7 +20,7 @@ public class MdbAuditoria implements MessageListener {
 
 	@Override
 	public void onMessage(Message rcvMessage) {
-		// TODO Auto-generated method stub
+
 
 		TextMessage msg = null;
         try {

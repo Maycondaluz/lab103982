@@ -24,7 +24,7 @@ public class MdbLogistica implements MessageListener {
 		ObjectMessage msg = null;
 		try {
 
-			LOGGER.warning("Iniciando!");
+			LOGGER.warning("Inicio");
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
