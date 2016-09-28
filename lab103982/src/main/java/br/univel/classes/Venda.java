@@ -4,6 +4,7 @@ package br.univel.classes;
 import java.io.Serializable;
 import java.util.List;
 
+
 public class Venda implements Serializable {
 
 
@@ -14,6 +15,7 @@ public class Venda implements Serializable {
 
 	private List<String> item;
     private int volume;
+
 	public List<String> getItem() {
 		return item;
 	}
@@ -27,7 +29,10 @@ public class Venda implements Serializable {
 		this.volume = volume;
 	}
 
-
+	@Override
+	public String toString() {
+		return "Item: " + getItem() + " Volume: " + getVolume();
+	}
 
 
 

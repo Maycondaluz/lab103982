@@ -5,12 +5,12 @@ import java.io.Serializable;
 
 public class Entrega implements Serializable {
 
-	
+
 	private static final long serialVersionUID = 8634568426273358268L;
 	/**
 	 *
 	 */
-	
+
 
 	private String cliente;
 	private String estabelecimento;
@@ -19,22 +19,29 @@ public class Entrega implements Serializable {
 
 	}
 
-
-	public String getComprador() {
+	public String getCliente() {
 		return cliente;
 	}
-	public void setComprador(String comprador) {
-		this.cliente = comprador;
+
+
+	public void setCliente(String cliente) {
+		this.cliente = cliente;
 	}
 
-	public String getLocal() {
+
+	public String getEstabelecimento() {
 		return estabelecimento;
 	}
-	public void setLocal(String local) {
-		this.estabelecimento = local;
+
+
+	public void setEstabelecimento(String estabelecimento) {
+		this.estabelecimento = estabelecimento;
 	}
 
-
+	@Override
+	public String toString() {
+		return "Cliente: " + getCliente() + " Estabelecimento: " + getEstabelecimento();
+	}
 
 }
 
